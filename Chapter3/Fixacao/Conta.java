@@ -6,6 +6,10 @@ public class Conta{
     public double limite = 100;
     public Agencia agencia;
 
+    public Conta(Agencia agencia){
+        this.agencia = agencia;
+    }
+
     public void deposita(double valor){
         this.saldo += valor;
     }
@@ -20,5 +24,10 @@ public class Conta{
 
     public double colsultaSaldoDisponivel(){
         return this.saldo + this.limite;
+    }
+
+    public void transfere(Conta destino, double valor){
+        this.saldo -= valor;
+        destino.saldo += valor;
     }
 }

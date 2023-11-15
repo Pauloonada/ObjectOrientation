@@ -3,12 +3,11 @@ package ObjectOrientation.Chapter3.Fixacao;
 public class TestaClienteECartao{
     public static void main(String[] args){
         Cliente c = new Cliente();
-        CartaoDeCredito cdc = new CartaoDeCredito();
+        CartaoDeCredito cdc = new CartaoDeCredito(111111);
 
         c.nome = "Paulo Rodrigues";
         c.codigo = 123;
 
-        cdc.numero = 111111;
         cdc.dataDeValidade = "05/09/2024";
 
         System.out.println("Dados do cliente");

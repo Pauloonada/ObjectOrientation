@@ -2,7 +2,9 @@ package ObjectOrientation.Chapter3.Fixacao;
 
 public class TestaValoresPadrao{
     public static void main(String[] args){
-        Conta c = new Conta();
+        Agencia a = new Agencia(123);
+
+        Conta c = new Conta(a);
 
         System.out.println("Valores Padrão");
         System.out.println("Número: " + c.numero);

@@ -2,11 +2,9 @@ package ObjectOrientation.Chapter3.Fixacao;
 
 public class TestaAgencia{
     public static void main(String[] args){
-        Agencia a1 = new Agencia();
-        a1.numero = 1234;
+        Agencia a1 = new Agencia(1234);
 
-        Agencia a2 = new Agencia();
-        a2.numero = 5678;
+        Agencia a2 = new Agencia(5678);
 
         System.out.println("Dados da primeira agência");
         System.out.println("Número: " + a1.numero);

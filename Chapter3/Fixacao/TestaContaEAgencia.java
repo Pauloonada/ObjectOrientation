@@ -2,10 +2,8 @@ package ObjectOrientation.Chapter3.Fixacao;
 
 public class TestaContaEAgencia{
     public static void main(String[] args){
-        Agencia a = new Agencia();
-        Conta c = new Conta();
-
-        a.numero = 178;
+        Agencia a = new Agencia(1234);
+        Conta c = new Conta(a);
 
         c.numero = 123;
         c.saldo = 1000.0;
@@ -22,6 +20,8 @@ public class TestaContaEAgencia{
         System.out.println("Limite: " + c.limite);
 
         System.out.println("------------------------------");
+
+        c.agencia = a;
 
         System.out.println("Dado da agência obtidos através da conta");
         System.out.println("Número: " + c.agencia.numero);
