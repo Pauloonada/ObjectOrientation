@@ -16,4 +16,8 @@ class Conta{
     private void descontaTarifa(){
         this.saldo -= 0.1;
     }
+
+    public double getSaldo(){
+        return this.saldo;
+    }
 }
